@@ -1,0 +1,14 @@
+.productlist {
+  list-style: none;
+  @include flexCenter(row;)
+  .product {
+    a {
+      img {
+      }
+      .description {
+      }
+      .price {
+      }
+    }
+  }
+}
