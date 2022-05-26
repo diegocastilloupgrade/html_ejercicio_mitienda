@@ -482,6 +482,12 @@ input[type="checkbox"], input[type="radio"] {
   gap: 0.5rem;
 }
 
+main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 main .productlist {
   list-style: none;
   display: -webkit-box;
@@ -500,9 +506,7 @@ main .productlist {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  gap: 1rem;
-  max-width: 1600px;
-  margin: 0 auto;
+  gap: .5rem;
 }
 
 main .productlist .product a {
@@ -510,9 +514,12 @@ main .productlist .product a {
   color: #000;
 }
 
-main .productlist .product a p {
+main .productlist .product a img {
   text-align: center;
-  margin: .5rem auto;
+}
+
+main .productlist .product a p {
+  margin: 0.5rem auto;
 }
 
 main .productlist .product a .price {
@@ -598,7 +605,7 @@ header nav .typeclothesmenumale {
   display: none;
 }
 
-header ul {
+header .breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -616,20 +623,20 @@ header ul {
   color: gray;
 }
 
-header ul .currentitem {
+header .breadcrumb .currentitem {
   color: black;
   font-weight: bold;
 }
 
-header ul .currentitem::after {
+header .breadcrumb .currentitem::after {
   content: '';
 }
 
-header ul li {
+header .breadcrumb li {
   margin: 0 1rem;
 }
 
-header ul li:after {
+header .breadcrumb li:after {
   content: '>';
   margin-left: 1rem;
 }
@@ -672,19 +679,59 @@ header .search input {
   border-bottom: 2px solid black;
 }
 
+header .search form {
+  margin-right: 1rem;
+}
+
+header .search a {
+  margin-right: 1rem;
+}
+
 header .filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+}
+
+header .filters ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 3rem;
+}
+
+header .filters li {
+  margin: 0 1rem;
+}
+
+header .filters span {
+  border-left: 1px solid gray;
+  padding: 0 1rem;
+}
+
+header .filters span:first-child {
+  border: none;
 }
 /*# sourceMappingURL=main.css.map */

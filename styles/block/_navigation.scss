@@ -38,7 +38,7 @@ header {
       display: none;
     }
   }
-  ul {
+  .breadcrumb {
     @include flexCenter(row, space-between, center);
     margin: 1rem 0 2rem 0;
     color: gray;
@@ -65,8 +65,15 @@ header {
   .search {
     @include flexCenter(row, space-between, center);
     input{border:none; border-bottom:2px solid black}
+    form{margin-right: 1rem}
+    a{margin-right: 1rem}
   }
   .filters {
-    @include flexCenter(column, space-between, flex-start);
+    @include flexCenter(row, space-between, center);
+    padding:2rem 0;
+    ul{margin: 0; @include flexCenter(row, space-between, center); margin-right: 3rem;}
+    li {margin: 0 1rem;}
+    span{border-left: 1px solid gray; padding: 0 1rem;}
+    span:first-child{border:none}
   }
 }
