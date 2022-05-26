@@ -1,0 +1,72 @@
+header {
+  @include flexCenter(row, space-between, flex-start);
+  h1 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .gendermenu {
+    @include flexCenter(row, space-between, flex-start);
+    li {
+      padding: 1rem;
+      &.genderfemale {
+        position: relative;
+      }
+      &.gendermale {
+        position: relative;
+      }
+      &.genderfemale:hover .typeclothesmenufemale {
+        display: block;
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        background: white;
+        box-shadow: 3px 3px 3px black;
+      }
+      &.gendermale:hover .typeclothesmenumale {
+        display: block;
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        background: white;
+        box-shadow: 3px 3px 3px black;
+      }
+    }
+  }
+  nav {
+    .typeclothesmenufemale,
+    .typeclothesmenumale {
+      display: none;
+    }
+  }
+  ul {
+    @include flexCenter(row, space-between, center);
+    margin: 1rem 0 2rem 0;
+    color: gray;
+    .currentitem {
+      color: black;
+      font-weight: bold;
+      &::after {
+        content: '';
+      }
+    }
+
+    li {
+      margin: 0 1rem;
+    }
+    li:after {
+      content: '>';
+      margin-left: 1rem;
+    }
+  }
+  .loginMenu {
+    @include flexCenter(column, space-between, flex-start);
+    padding:1rem 2rem;
+  }
+  .search {
+    @include flexCenter(row, space-between, center);
+    input{border:none; border-bottom:2px solid black}
+  }
+  .filters {
+    @include flexCenter(column, space-between, flex-start);
+  }
+}

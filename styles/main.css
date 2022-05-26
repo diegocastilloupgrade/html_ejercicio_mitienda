@@ -482,7 +482,209 @@ input[type="checkbox"], input[type="radio"] {
   gap: 0.5rem;
 }
 
-.productlist {
+main .productlist {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+main .productlist .product a {
+  text-decoration: none;
+  color: #000;
+}
+
+main .productlist .product a p {
+  text-align: center;
+  margin: .5rem auto;
+}
+
+main .productlist .product a .price {
+  font-weight: bold;
+}
+
+.offers form input {
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+header h1 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+header .gendermenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+header .gendermenu li {
+  padding: 1rem;
+}
+
+header .gendermenu li.genderfemale {
+  position: relative;
+}
+
+header .gendermenu li.gendermale {
+  position: relative;
+}
+
+header .gendermenu li.genderfemale:hover .typeclothesmenufemale {
+  display: block;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  background: white;
+  -webkit-box-shadow: 3px 3px 3px black;
+          box-shadow: 3px 3px 3px black;
+}
+
+header .gendermenu li.gendermale:hover .typeclothesmenumale {
+  display: block;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  background: white;
+  -webkit-box-shadow: 3px 3px 3px black;
+          box-shadow: 3px 3px 3px black;
+}
+
+header nav .typeclothesmenufemale,
+header nav .typeclothesmenumale {
+  display: none;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0 2rem 0;
+  color: gray;
+}
+
+header ul .currentitem {
+  color: black;
+  font-weight: bold;
+}
+
+header ul .currentitem::after {
+  content: '';
+}
+
+header ul li {
+  margin: 0 1rem;
+}
+
+header ul li:after {
+  content: '>';
+  margin-left: 1rem;
+}
+
+header .loginMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1rem 2rem;
+}
+
+header .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .search input {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+header .filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 /*# sourceMappingURL=main.css.map */

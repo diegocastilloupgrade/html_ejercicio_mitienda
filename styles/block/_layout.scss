@@ -1,0 +1,36 @@
+main {
+  .productlist {
+    list-style: none;
+    @include flexCenter(row, space-between, flex-start);
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    max-width: 1600px;
+    margin:0 auto;
+    
+    .product {
+      a {
+        text-decoration: none;
+        color: $black;
+        img {
+        }
+        p {
+          text-align: center;
+          margin:.5rem auto;
+        }
+        .description {
+        }
+        .price {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+.offers{
+    .principalclaim{}
+    .secondclaim{}
+    form{
+        input{border:none;border-bottom: 1px solid $black;}
+    }
+}

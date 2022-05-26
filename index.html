@@ -4,25 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
       <nav>
         <ul class="gendermenu">
-          <li>Mujer</li>
-          <li>Hombre</li>
-        </ul>
-        <ul class="typeclothesmenu">
-          <li class="">Novedades</li>
-          <li class="">Ropa</li>
-          <li class="">P&B by Rosalia</li>
-          <li class="">Zapatos</li>
-          <li class="">Accesorios</li>
-          <li class="">Editorials</li>
-          <li class="">Join Life</li>
-          <li class="offer">Promociones</li>
+          <li class="genderfemale">
+            <span>Mujer</span>
+            <ul class="typeclothesmenufemale">
+              <li class="">Novedades Mujer</li>
+              <li class="">Ropa</li>
+              <li class="">P&B by Rosalia</li>
+              <li class="">Zapatos</li>
+              <li class="">Accesorios</li>
+              <li class="">Editorials</li>
+              <li class="">Join Life</li>
+              <li class="offer">Promociones</li>
+            </ul>
+          </li>
+          <li class="gendermale">
+            <span>Hombre</span>
+            <ul class="typeclothesmenumale">
+              <li class="">Novedades Hombre</li>
+              <li class="">Ropa</li>
+              <li class="">P&B by Rosalia</li>
+              <li class="">Zapatos</li>
+              <li class="">Accesorios</li>
+              <li class="">Editorials</li>
+              <li class="">Join Life</li>
+              <li class="offer">Promociones</li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <div>
@@ -34,15 +48,15 @@
           <li class="currentitem">Licencias (51 artículos)</li>
         </ul>
       </div>
-      <div>
-        <div>
+      <div class="loginMenu">
+        <div class="search">
           <form action="">
             <input type="text" />
           </form>
           <a href="login">Login</a>
           <a href="cart">Carrito</a>
         </div>
-        <div>
+        <div class="filters">
           <span>Vista</span>
           <ul>
             <li>2</li>
@@ -218,8 +232,22 @@
         </li>
       </ul>
     </main>
-    <section class="offers"></section>
-    <section class="contact"></section>
+    <section class="offers">
+      <p class="principalclaim">10% de descuento...</p>
+      <p class="secondclaim">¡Suscribete a la newsletter!*</p>
+      <form action="">
+        <input type="text" name="mail" id="" placeholder="Introduce tu e-mail">
+      </form>
+    </section>
+    <section class="contact">
+      <p>Contacto</p>
+      <ul>
+        <li>900 123123</li>
+        <li>Venta online</li>
+        <li>Tiendas y empresa</li>
+      </ul>
+      <p>De lunes a viernes de 9:30a 22:00</p>
+    </section>
     <footer>
       <section class="links"></section>
       <section class="legallinks"></section>
